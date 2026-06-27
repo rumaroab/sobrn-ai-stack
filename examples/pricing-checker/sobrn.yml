@@ -1,0 +1,15 @@
+project:
+  name: Example AI App
+
+usage:
+  requests_per_month: 100000
+  input_tokens_per_request: 1200
+  output_tokens_per_request: 500
+
+scenarios:
+  - name: Hosted baseline
+    model: openai/gpt-4o-mini
+  - name: Higher quality hosted
+    model: openai/gpt-4o
+  - name: Local portability check
+    model: ollama/llama3.1:8b

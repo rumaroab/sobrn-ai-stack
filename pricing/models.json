@@ -1,0 +1,117 @@
+{
+  "schema_version": "0.1",
+  "as_of": "2026-06-27",
+  "currency": "USD",
+  "unit": "per_1m_tokens",
+  "notes": "Local planning catalog. Verify current public or negotiated pricing before using estimates for financial commitments.",
+  "models": [
+    {
+      "id": "openai/gpt-4o-mini",
+      "provider": "openai",
+      "display_name": "GPT-4o mini",
+      "input_per_1m": 0.15,
+      "output_per_1m": 0.6,
+      "context_window": 128000,
+      "open_weight": false,
+      "local": false,
+      "openai_compatible": true,
+      "notes": "Public price snapshot; update for current rates."
+    },
+    {
+      "id": "openai/gpt-4o",
+      "provider": "openai",
+      "display_name": "GPT-4o",
+      "input_per_1m": 2.5,
+      "output_per_1m": 10.0,
+      "context_window": 128000,
+      "open_weight": false,
+      "local": false,
+      "openai_compatible": true,
+      "notes": "Public price snapshot; update for current rates."
+    },
+    {
+      "id": "anthropic/claude-3-5-sonnet",
+      "provider": "anthropic",
+      "display_name": "Claude 3.5 Sonnet",
+      "input_per_1m": 3.0,
+      "output_per_1m": 15.0,
+      "context_window": 200000,
+      "open_weight": false,
+      "local": false,
+      "openai_compatible": false,
+      "notes": "Public price snapshot; update for current rates."
+    },
+    {
+      "id": "google/gemini-1.5-flash",
+      "provider": "google",
+      "display_name": "Gemini 1.5 Flash",
+      "input_per_1m": 0.075,
+      "output_per_1m": 0.3,
+      "context_window": 1000000,
+      "open_weight": false,
+      "local": false,
+      "openai_compatible": false,
+      "notes": "Public price snapshot; update for current rates."
+    },
+    {
+      "id": "mistral/mistral-small",
+      "provider": "mistral",
+      "display_name": "Mistral Small",
+      "input_per_1m": 0.2,
+      "output_per_1m": 0.6,
+      "context_window": 32000,
+      "open_weight": false,
+      "local": false,
+      "openai_compatible": true,
+      "notes": "Representative hosted model entry; update for current rates."
+    },
+    {
+      "id": "groq/llama-3.1-8b-instant",
+      "provider": "groq",
+      "display_name": "Llama 3.1 8B Instant",
+      "input_per_1m": 0.05,
+      "output_per_1m": 0.08,
+      "context_window": 131072,
+      "open_weight": true,
+      "local": false,
+      "openai_compatible": true,
+      "notes": "Hosted open-weight model price snapshot; update for current rates."
+    },
+    {
+      "id": "ollama/llama3.1:8b",
+      "provider": "ollama",
+      "display_name": "Llama 3.1 8B via Ollama",
+      "input_per_1m": 0.0,
+      "output_per_1m": 0.0,
+      "context_window": 128000,
+      "open_weight": true,
+      "local": true,
+      "openai_compatible": true,
+      "notes": "Token fees modeled as $0. Add hardware, hosting, and operations costs separately."
+    },
+    {
+      "id": "ollama/qwen2.5-coder:7b",
+      "provider": "ollama",
+      "display_name": "Qwen2.5 Coder 7B via Ollama",
+      "input_per_1m": 0.0,
+      "output_per_1m": 0.0,
+      "context_window": 32768,
+      "open_weight": true,
+      "local": true,
+      "openai_compatible": true,
+      "notes": "Token fees modeled as $0. Add hardware, hosting, and operations costs separately."
+    },
+    {
+      "id": "ollama/phi3:mini",
+      "provider": "ollama",
+      "display_name": "Phi-3 Mini via Ollama",
+      "input_per_1m": 0.0,
+      "output_per_1m": 0.0,
+      "context_window": 4096,
+      "open_weight": true,
+      "local": true,
+      "openai_compatible": true,
+      "notes": "Token fees modeled as $0. Add hardware, hosting, and operations costs separately."
+    }
+  ]
+}
